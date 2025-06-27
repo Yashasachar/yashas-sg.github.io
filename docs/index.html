@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Mr. Yashas S G - Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body class="light">
@@ -22,389 +23,116 @@
     </nav>
   </header>
 
-  <!-- Sections Below -->
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Mr. Yashas S G</strong>, a B.Tech Computer Science (AI & ML) student with a passion for AI-driven, privacy-preserving, and immersive innovations.
+      From federated learning and AR/VR platforms to research in digital forensics, I specialize in solving real-world challenges through smart technology.
+    </p>
+  </section>
 
-  <!-- About Me -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    I'm <strong>Mr. Yashas S G</strong>, a B.Tech Computer Science (AI & ML) student with a passion for building AI-driven, privacy-preserving, and immersive solutions.
-    I’ve developed Federated Learning systems, AR/VR learning platforms, and research-backed innovations in AI and Digital Forensics.
-  </p>
-  <p>
-    I love solving real-world problems with technology — blending AI, ML, WebXR, NLP, and secure architectures to build the future. I'm also a proactive leader, having served in key positions across university councils and tech committees.
-  </p>
-</section>
-
-<!-- Skills -->
-<section id="skills" class="section">
-  <h2>Technical & Soft Skills</h2>
-
-  <div class="skills-grid">
-    <div class="skill-category">
-      <h3>Languages</h3>
-      <ul>
-        <li><img src="images/icons/python.svg" alt="Python"> Python</li>
-        <li><img src="images/icons/cpp.svg" alt="C++"> C++</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>AI / ML</h3>
-      <ul>
-        <li><img src="images/icons/tensorflow.svg" alt="TensorFlow"> TensorFlow</li>
-        <li><img src="images/icons/pytorch.svg" alt="PyTorch"> PyTorch</li>
-        <li><img src="images/icons/opencv.svg" alt="OpenCV"> OpenCV</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>AR / VR</h3>
-      <ul>
-        <li><img src="images/icons/unity.svg" alt="Unity"> Unity</li>
-        <li><img src="images/icons/webxr.svg" alt="WebXR"> WebXR</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Software / DevOps</h3>
-      <ul>
-        <li><img src="images/icons/git.svg" alt="Git"> Git</li>
-        <li><img src="images/icons/docker.svg" alt="Docker"> Docker</li>
-        <li><img src="images/icons/aws.svg" alt="AWS"> AWS</li>
-        <li><img src="images/icons/mlops.svg" alt="MLOps"> MLOps</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Web Development</h3>
-      <ul>
-        <li><img src="images/icons/html.svg" alt="HTML"> HTML</li>
-        <li><img src="images/icons/css.svg" alt="CSS"> CSS</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Soft Skills</h3>
-      <ul>
-        <li>Leadership</li>
-        <li>Teamwork</li>
-        <li>Problem Solving</li>
-        <li>Time Management</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Projects -->
-<section id="projects" class="section">
-  <h2>Featured Projects</h2>
-
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-    <div class="project-card">
-      <img src="images/project1.png" alt="Federated Learning" />
-      <h3>Federated Medical Diagnosis System</h3>
-      <p>Privacy-preserving medical diagnosis using Flower, Flask, Docker, and Naive Bayes. Real-time prediction through decentralized training.</p>
-      <div class="project-links">
-        <a href="https://github.com/Yashasachar/federated-medical-diagnosis" target="_blank">GitHub</a>
-        <span class="badge">Python</span>
-        <span class="badge">Flask</span>
-        <span class="badge">Docker</span>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>C++</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>AI / ML</h3>
+        <ul>
+          <li>TensorFlow</li>
+          <li>PyTorch</li>
+          <li>OpenCV</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Web & DevOps</h3>
+        <ul>
+          <li>HTML, CSS</li>
+          <li>Git & Docker</li>
+          <li>AWS, MLOps</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>AR / VR</h3>
+        <ul>
+          <li>Unity</li>
+          <li>WebXR</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Leadership</li>
+          <li>Teamwork</li>
+          <li>Time Management</li>
+        </ul>
       </div>
     </div>
+  </section>
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <img src="images/project2.png" alt="AI Fingerprints Research" />
-      <h3>AI-Generated Fingerprints Research</h3>
-      <p>Presented at CIS 2023. Explores deep AI synthesis of biometric patterns for digital forensic advancements.</p>
-      <div class="project-links">
-        <a href="https://github.com/Yashasachar/ai-fingerprint-research" target="_blank">GitHub</a>
-        <span class="badge">Research</span>
-        <span class="badge">AI/ML</span>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Federated Medical Diagnosis</h3>
+        <p>Privacy-preserving diagnosis system using Flower, Flask, Docker, and Naive Bayes for real-time decentralized ML.</p>
+        <a href="https://github.com/Yashasachar/federated-medical-diagnosis" target="_blank">GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>AI-Generated Fingerprints Research</h3>
+        <p>Presented at CIS 2023 — generating synthetic biometric data for privacy and digital forensics.</p>
+        <a href="https://github.com/Yashasachar/ai-fingerprint-research" target="_blank">GitHub →</a>
+      </div>
+      <div class="project-card">
+        <h3>AI Mental Health Chatbot (SIH 2023)</h3>
+        <p>NLP-based chatbot providing wellness assessments and self-help strategies. Submitted to SIH 2023.</p>
+        <a href="https://github.com/Yashasachar/mental-health-ai-chatbot" target="_blank">GitHub →</a>
       </div>
     </div>
+  </section>
 
-    <!-- Project 3 -->
-    <div class="project-card">
-      <img src="images/project3.png" alt="Mental Health Chatbot" />
-      <h3>AI Mental Health Chatbot (SIH 2023)</h3>
-      <p>Built an NLP-based AI chatbot for mental wellness assessments and self-help recommendations, submitted to Smart India Hackathon 2023.</p>
-      <div class="project-links">
-        <a href="https://github.com/Yashasachar/mental-health-ai-chatbot" target="_blank">GitHub</a>
-        <span class="badge">Python</span>
-        <span class="badge">NLP</span>
-      </div>
+  <!-- Resume -->
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <div class="resume-actions">
+      <a href="resume.pdf" target="_blank" class="resume-btn">📄 View Fullscreen</a>
+      <a href="resume.pdf" download class="resume-btn download">⬇️ Download</a>
     </div>
-
-  </div>
-</section>
-
-
-<!-- Resume -->
-<section id="resume" class="section">
-  <h2>Resume</h2>
-
-  <p>You can view or download my latest resume using the options below.</p>
-
-  <div class="resume-actions">
-    <a href="resume.pdf" target="_blank" class="resume-btn">📄 View Fullscreen</a>
-    <a href="resume.pdf" download class="resume-btn download">⬇️ Download Resume</a>
-  </div>
-
-  <div class="resume-embed">
-    <iframe src="resume.pdf" frameborder="0" width="100%" height="500px"></iframe>
-  </div>
-</section>
-
-
-<!-- Timeline -->
-<section id="timeline" class="section">
-  <h2>My Journey</h2>
-
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-date">2010 - 2022</div>
-      <div class="timeline-content">
-        <h3>Schooling – Shantiniketan Group of Institutions</h3>
-        <p>Completed education from Grade 1 to 12 in Ramanagaram with strong foundation in science and math, and active involvement in debates and sports.</p>
-      </div>
+    <div class="resume-embed">
+      <iframe src="resume.pdf" frameborder="0"></iframe>
     </div>
+  </section>
 
-    <div class="timeline-item">
-      <div class="timeline-date">2022 - 2026</div>
-      <div class="timeline-content">
-        <h3>B.Tech in CSE (AI & ML) – Alliance University</h3>
-        <p>Learning AI, ML, Cloud, AR/VR, and full-stack development. Also took leadership roles in governing councils and technical committees.</p>
-      </div>
-    </div>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="from_email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">📤 Send Message</button>
+      <p id="form-status"></p>
+    </form>
+  </section>
 
-    <div class="timeline-item">
-      <div class="timeline-date">2023 - 2024</div>
-      <div class="timeline-content">
-        <h3>Internship – Office of Admissions</h3>
-        <p>Assisted with student outreach, strategic marketing, and engagement enhancement at Alliance University.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">2024 - 2025</div>
-      <div class="timeline-content">
-        <h3>Corporate Mentorship Program</h3>
-        <p>Received mentorship on Generative AI, project proposal drafting, and presented an LIC Web Revamp solution in a government RFP simulation.</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">Future</div>
-      <div class="timeline-content">
-        <h3>AI Research & Industry Innovation</h3>
-        <p>Aiming to lead innovations in AI, privacy-preserving systems, and immersive education using WebXR and NLP. </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Testimonials -->
-<section id="testimonials" class="section">
-  <h2>What Others Say</h2>
-
-  <div class="testimonial-carousel">
-
-    <div class="testimonial active">
-      <p>“Yashas brings both technical excellence and leadership to the table. His work in federated learning and AI ethics is way ahead of his peers.”</p>
-      <h4>— Dr. S. Meenakshi, Professor, Alliance University</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>“He is a visionary student with an ability to simplify complex systems. His AR/VR project on Mars exploration left a lasting impression.”</p>
-      <h4>— Mr. Rahul Dev, Corporate Mentor, AI & Strategy</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>“Reliable, creative, and always ready to contribute — Yashas played a key role in the student council and placement team success.”</p>
-      <h4>— Ms. Shwetha N., Placement Coordinator, Alliance CSE</h4>
-    </div>
-
-  </div>
-
-  <div class="testimonial-nav">
-    <button onclick="prevTestimonial()">⬅️</button>
-    <button onclick="nextTestimonial()">➡️</button>
-  </div>
-</section>
-
-<!-- Goals -->
-<section id="goals" class="section">
-  <h2>My Goals & Vision</h2>
-
-  <div class="goals-grid">
-    <div class="goal-card">
-      <h3>🚀 Launch a Global AI Startup</h3>
-      <p>Build scalable AI-driven platforms that address real-world challenges in healthcare, education, and society.</p>
-    </div>
-
-    <div class="goal-card">
-      <h3>📚 Publish Research in Top Conferences</h3>
-      <p>Continue exploring intersections of AI, privacy, and digital forensics through impactful publications.</p>
-    </div>
-
-    <div class="goal-card">
-      <h3>🌐 Promote Ethical AI & Open Source</h3>
-      <p>Advocate for responsible, transparent AI systems and contribute to meaningful open-source projects.</p>
-    </div>
-
-    <div class="goal-card">
-      <h3>🎤 Mentor and Inspire Young Innovators</h3>
-      <p>Lead by example and share knowledge to grow India’s next-gen tech talent, especially in rural areas.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Achievements -->
-<section id="achievements" class="section">
-  <h2>Achievements & Certifications</h2>
-
-  <div class="gallery-grid">
-
-    <div class="gallery-item" onclick="openModal('images/certificate1.jpg')">
-      <img src="images/certificate1.jpg" alt="CIS 2023 Paper Presentation" />
-      <p>CIS 2023 – AI Fingerprints</p>
-    </div>
-
-    <div class="gallery-item" onclick="openModal('images/certificate2.jpg')">
-      <img src="images/certificate2.jpg" alt="Smart India Hackathon" />
-      <p>Smart India Hackathon – AI Chatbot</p>
-    </div>
-
-    <div class="gallery-item" onclick="openModal('images/certificate3.jpg')">
-      <img src="images/certificate3.jpg" alt="AI Practitioner Certificate" />
-      <p>AI Practitioner (Coursera)</p>
-    </div>
-
-    <div class="gallery-item" onclick="openModal('images/certificate4.jpg')">
-      <img src="images/certificate4.jpg" alt="Deep Learning in Healthcare" />
-      <p>Deep Learning – UIUC</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Modal Viewer for Certificates -->
-<div id="achievement-modal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img id="modal-image" src="" alt="Certificate Preview" />
-  </div>
-</div>
-
-<!-- Video Intro -->
-<section id="video" class="section">
-  <h2>Video Introduction</h2>
-
-  <p>Here's a short video that highlights my journey, skills, and goals.</p>
-
-  <div class="video-wrapper">
-    <!-- Option 1: YouTube Embed -->
-    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-            title="Intro Video" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
-
-    <!-- Option 2: Local Video (Uncomment if using video.mp4 locally) -->
-    <!--
-    <video controls poster="images/video-thumbnail.jpg">
-      <source src="assets/video-intro.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    -->
-  </div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section">
-  <h2>Get In Touch</h2>
-  <p>Have a question, opportunity, or just want to say hi? Drop me a message below!</p>
-
-  <form id="contact-form">
-    <input type="text" name="from_name" placeholder="Your Name" required>
-    <input type="email" name="from_email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-    <button type="submit">📤 Send Message</button>
-    <p id="form-status"></p>
-  </form>
-</section>
-
-<!-- Blog Section -->
-<section id="blog" class="section">
-  <h2>Latest Articles</h2>
-  <p>I regularly write about AI, Federated Learning, Digital Forensics, and Innovation. Here are some featured reads:</p>
-
-  <div class="blog-grid">
-    <div class="blog-card">
-      <h3>Unveiling the Potential: AI Fingerprints in Digital Forensics</h3>
-      <p>Explore how AI-generated fingerprints can reshape privacy, identity, and investigation processes in cyber-forensics.</p>
-      <a href="https://your-medium-or-devto-link.com/post1" target="_blank">Read More →</a>
-    </div>
-
-    <div class="blog-card">
-      <h3>How I Built a Federated Learning System from Scratch</h3>
-      <p>A practical guide to implementing privacy-preserving training using Flower, Flask, and Docker Compose.</p>
-      <a href="https://your-medium-or-devto-link.com/post2" target="_blank">Read More →</a>
-    </div>
-
-    <div class="blog-card">
-      <h3>Building AI Chatbots for Mental Health Awareness</h3>
-      <p>Designing NLP systems to support wellness and emotional support — lessons from the Smart India Hackathon.</p>
-      <a href="https://your-medium-or-devto-link.com/post3" target="_blank">Read More →</a>
-    </div>
-  </div>
-</section>
-
-<!-- Map Section -->
-<section id="map" class="section">
-  <h2>Where I'm Based</h2>
-  <p>I’m currently located in <strong>Ramanagaram, Karnataka</strong>, and open to remote/global collaborations.</p>
-
-  <div class="map-container">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.1020131891037!2d77.29748547484264!3d12.719092020556173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae367408da29c3%3A0x540bd19d68f8e63!2sRamanagara%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1715004004457!5m2!1sen!2sin"
-      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</section>
-
-<!-- Footer with QR Code -->
-<footer class="footer section">
-  <h2>Connect With Me</h2>
-
-  <p>Scan the QR to access this portfolio from your phone:</p>
-  <div class="qr-footer">
-    <img src="images/Yashas_Portfolio_QR.png" alt="QR Code to Portfolio">
-  </div>
-
-  <p style="margin-top: 10px;">
-    <a href="mailto:sg.yashasacharya@gmail.com">📧 sg.yashasacharya@gmail.com</a> |
-    <a href="https://www.linkedin.com/in/yashas-s-g-acharya-/" target="_blank">🔗 LinkedIn</a> |
-    <a href="https://github.com/Yashasachar" target="_blank">💻 GitHub</a>
-  </p>
-
-  <p style="margin-top: 5px;">&copy; 2025 Mr. Yashas S G. All rights reserved.</p>
-</footer>
-<p id="visitor-count">👁️ Visitors: Loading...</p>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-< ! - -   r e f r e s h   r e b u i l d   - - >  
- 
+  <!-- Footer -->
+  <footer class="footer section">
+    <p>Scan to visit:</p>
+    <img src="images/Yashas_Portfolio_QR.png" alt="QR Code" class="qr">
+    <p>
+      <a href="mailto:sg.yashasacharya@gmail.com">📧 Email</a> |
+      <a href="https://www.linkedin.com/in/yashas-s-g-acharya-/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Yashasachar" target="_blank">GitHub</a>
+    </p>
+    <p>&copy; 2025 Mr. Yashas S G</p>
+  </footer>
+</body>
+</html>
