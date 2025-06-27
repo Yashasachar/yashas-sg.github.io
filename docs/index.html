@@ -3,18 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Mr. Yashas S G - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #f4f6f8;
+      --text: #111827;
+      --primary: #1f2937;
+      --button-bg: #1f2937;
+      --button-text: white;
+      --modal-bg: white;
+    }
+
+    body.dark {
+      --bg: #1f2937;
+      --text: #e5e7eb;
+      --primary: #111827;
+      --button-bg: #374151;
+      --button-text: #f9fafb;
+      --modal-bg: #111827;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      background: #f4f6f8;
-      padding: 40px;
+      background: var(--bg);
+      color: var(--text);
+      padding: 20px;
     }
 
     h1 {
       text-align: center;
-      font-size: 36px;
+      font-size: 32px;
     }
 
     .section {
@@ -28,17 +48,13 @@
       font-weight: 600;
       padding: 15px 20px;
       font-size: 18px;
-      background: #1f2937;
-      color: #fff;
+      background: var(--primary);
+      color: var(--button-text);
       border: none;
       border-radius: 8px;
       margin-top: 10px;
       cursor: pointer;
       transition: 0.3s;
-    }
-
-    .section-btn:hover {
-      background: #374151;
     }
 
     .subpoints {
@@ -49,7 +65,7 @@
 
     .subpoints button {
       background: #e5e7eb;
-      color: #111827;
+      color: var(--text);
       border: none;
       padding: 10px;
       margin: 5px 0;
@@ -63,7 +79,6 @@
       background: #d1d5db;
     }
 
-    /* Modal */
     .modal {
       display: none;
       position: fixed;
@@ -74,13 +89,14 @@
     }
 
     .modal-content {
-      background: #fff;
+      background: var(--modal-bg);
       margin: 10% auto;
       padding: 30px;
       width: 80%;
       max-width: 600px;
       border-radius: 10px;
       position: relative;
+      color: var(--text);
     }
 
     .close {
@@ -90,69 +106,139 @@
       font-size: 20px;
       cursor: pointer;
     }
+
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    .footer a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .top-bar {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .top-bar button {
+      margin: 5px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .download-btn {
+      background-color: #2563eb;
+      color: white;
+    }
+
+    .toggle-btn {
+      background-color: #6b7280;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .modal-content {
+        width: 90%;
+      }
+
+      .section-btn {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
 
-<h1>Mr. Yashas S G - Portfolio</h1>
+  <h1>Mr. Yashas S G - Portfolio</h1>
 
-<div class="section">
-  <button class="section-btn" onclick="toggle('projects')">Projects & Competitions</button>
-  <div class="subpoints" id="projects">
-    <button onclick="showDetail('Federated Learning-Based Privacy-Preserving Medical Diagnosis System', 'Built with Flask, Flower, and Docker Compose. Enabled decentralized private model training across clients using Gaussian Naive Bayes.')">Federated Learning System</button>
-    <button onclick="showDetail('AI-Generated Fingerprints - CIS 2023', 'Presented AI-driven biometric synthesis research at Congress on Intelligent Systems 2023.')">AI Fingerprints Research</button>
-    <button onclick="showDetail('AI Mental Health System (SIH)', 'Developed AI-based mental health chatbot using NLP for Smart India Hackathon 2023.')">Mental Health AI (SIH)</button>
-    <button onclick="showDetail('Immersive Mars Exploration', 'AR/VR-based AI learning platform for Mars with NLP and 3D interactivity.')">Mars AR/VR Platform</button>
-    <button onclick="showDetail('Knowledge-Based Diagnosis', 'Rule-based AI system using propositional logic and inference for medical symptom analysis.')">Knowledge AI System</button>
+  <div class="top-bar">
+    <a href="YASHAS S G, RESUME - 2022BCSE07AED928.pdf" download>
+      <button class="download-btn">📥 Download Resume</button>
+    </a>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
   </div>
 
-  <button class="section-btn" onclick="toggle('experience')">Internship & Professional Experience</button>
-  <div class="subpoints" id="experience">
-    <button onclick="showDetail('RFP Proposal - LIC Web Modernization', 'Led technical architecture, roadmap and proposal writing for a large-scale gov project during mentorship program.')">RFP Proposal - LIC</button>
-    <button onclick="showDetail('Office of Admissions Intern', 'Assisted student outreach and strategy for Alliance University admissions.')">Alliance Admissions Intern</button>
+  <div class="section">
+    <button class="section-btn" onclick="toggle('projects')">Projects & Competitions</button>
+    <div class="subpoints" id="projects">
+      <button onclick="showDetail('Federated Learning System', 'Built with Flask, Flower, and Docker Compose...')">Federated Learning</button>
+      <button onclick="showDetail('AI Fingerprints Research', 'Presented AI-driven biometric synthesis research at CIS 2023.')">AI Fingerprints</button>
+      <button onclick="showDetail('Mental Health AI (SIH)', 'NLP chatbot for mental health, submitted to SIH 2023.')">SIH Chatbot</button>
+      <button onclick="showDetail('Mars AR/VR Platform', 'AR/VR with NLP for immersive space learning.')">Mars Platform</button>
+      <button onclick="showDetail('Knowledge-Based Diagnosis', 'Rule-based AI with propositional logic.')">Diagnosis System</button>
+    </div>
+
+    <button class="section-btn" onclick="toggle('experience')">Internship & Experience</button>
+    <div class="subpoints" id="experience">
+      <button onclick="showDetail('LIC RFP Proposal', 'Designed architecture and roadmap for large-scale modernization proposal.')">LIC RFP</button>
+      <button onclick="showDetail('Alliance Admissions Intern', 'Outreach, data, and engagement strategies.')">Admissions</button>
+    </div>
+
+    <button class="section-btn" onclick="toggle('leadership')">Leadership & Volunteering</button>
+    <div class="subpoints" id="leadership">
+      <button onclick="showDetail('Secretary, SGC', 'Led academic and admin initiatives at Alliance.')">SGC</button>
+      <button onclick="showDetail('Placement Committee', 'Worked on placement strategies and logistics.')">Placement</button>
+      <button onclick="showDetail('Rotary Interact', 'Youth Secretary and community service events.')">Rotary</button>
+    </div>
+
+    <button class="section-btn" onclick="toggle('certifications')">Certifications</button>
+    <div class="subpoints" id="certifications">
+      <button onclick="showDetail('Mentorship Program', 'Trained in AI, proposal writing, and communication.')">Mentorship</button>
+      <button onclick="showDetail('AI Practitioner', 'CertNexus AI certification via Coursera.')">AI Practitioner</button>
+      <button onclick="showDetail('Deep Learning Healthcare', 'Advanced DL course via UIUC.')">DL for Healthcare</button>
+      <button onclick="showDetail('MLOps - Duke', 'Completed MLOps training.')">MLOps</button>
+    </div>
   </div>
 
-  <button class="section-btn" onclick="toggle('leadership')">Leadership & Volunteering</button>
-  <div class="subpoints" id="leadership">
-    <button onclick="showDetail('Secretary, Student Governing Council', 'Represented students in academic and administrative matters at Alliance University.')">Secretary, SGC</button>
-    <button onclick="showDetail('Placement Committee Member', 'Helped coordinate student placement activities, interactions, and outreach.')">Placement Committee</button>
-    <button onclick="showDetail('Youth Secretary, Rotary Interact Club', 'Organized youth development events and community services.')">Rotary Interact</button>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-body"></p>
+    </div>
   </div>
 
-  <button class="section-btn" onclick="toggle('certifications')">Certifications & Trainings</button>
-  <div class="subpoints" id="certifications">
-    <button onclick="showDetail('Corporate Mentorship Program', 'Received mentorship on Generative AI, RFP drafting, communication.')">Corporate Mentorship</button>
-    <button onclick="showDetail('AI Practitioner Certificate (Coursera)', 'CertNexus certified AI practitioner program completed.')">AI Practitioner</button>
-    <button onclick="showDetail('Advanced Deep Learning in Healthcare', 'Completed Coursera course from UIUC on deep learning for healthcare.')">Deep Learning - Healthcare</button>
-    <button onclick="showDetail('MLOps - Duke University', 'Trained on DevOps, DataOps, MLOps.')">MLOps Certification</button>
+  <div class="footer">
+    <p>
+      <a href="https://www.linkedin.com/in/yashas-s-g-acharya-/" target="_blank">🔗 LinkedIn</a> |
+      <a href="https://github.com/Yashasachar" target="_blank">💻 GitHub</a> |
+      <a href="mailto:sg.yashasacharya@gmail.com">📧 Email</a>
+    </p>
+    <p>&copy; 2025 Yashas S G</p>
   </div>
-</div>
 
-<!-- Modal -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2 id="modal-title"></h2>
-    <p id="modal-body"></p>
-  </div>
-</div>
+  <script>
+    function toggle(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
 
-<script>
-  function toggle(id) {
-    const el = document.getElementById(id);
-    el.style.display = (el.style.display === 'block') ? 'none' : 'block';
-  }
+    function showDetail(title, content) {
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-body').innerText = content;
+      document.getElementById('modal').style.display = 'block';
+    }
 
-  function showDetail(title, content) {
-    document.getElementById('modal-title').innerText = title;
-    document.getElementById('modal-body').innerText = content;
-    document.getElementById('modal').style.display = 'block';
-  }
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
 
-  function closeModal() {
-    document.getElementById('modal').style.display = 'none';
-  }
-</script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 
 </body>
 </html>
